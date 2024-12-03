@@ -1,8 +1,8 @@
 # Name of your application. Used to uniquely configure containers.
-service: creatorkit
+service: creatorkit.servicestack.net
 
 # Name of the container image.
-image: netcoreapps/creatorkit
+image: servicestack/creatorkit
 
 # Required for use of ASP.NET Core with Kamal-Proxy.
 env:
@@ -21,7 +21,7 @@ servers:
 # in Cloudflare's SSL/TLS setting to "Full" to enable end-to-end encryption.
 proxy:
   ssl: true
-  host: creatorkit.netcore.io
+  host: creatorkit.servicestack.net
   # kamal-proxy connects to your container over port 80, use `app_port` to specify a different port.
   app_port: 8080
 
@@ -43,14 +43,14 @@ builder:
 volumes:
   - "/opt/docker/CreatorKit/App_Data:/app/App_Data"
 
-#accessories:
-#  litestream:
-#    roles: ["web"]
-#    image: litestream/litestream
-#    files: ["config/litestream.yml:/etc/litestream.yml"]
-#    volumes: ["/opt/docker/CreatorKit/App_Data:/data"]
-#    cmd: replicate
-#    env:
-#      secret:
-#        - ACCESS_KEY_ID
-#        - SECRET_ACCESS_KEY
+accessories:
+  litestream:
+    roles: ["web"]
+    image: litestream/litestream
+    files: ["config/litestream.yml:/etc/litestream.yml"]
+    volumes: ["/opt/docker/CreatorKit/App_Data:/data"]
+    cmd: replicate
+    env:
+      secret:
+        - R2_ACCESS_KEY_ID
+        - R2_SECRET_ACCESS_KEY

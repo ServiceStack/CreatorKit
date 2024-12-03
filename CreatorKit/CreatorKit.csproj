@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ContainerLabel Include="service" Value="creatorkit" />
+    <ContainerLabel Include="service" Value="creatorkit.servicestack.net" />
   </ItemGroup>
   
   <ItemGroup>
