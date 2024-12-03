@@ -1,5 +1,5 @@
 # Name of your application. Used to uniquely configure containers.
-service: creatorkit.servicestack.net
+service: creatorkit-servicestack-net
 
 # Name of the container image.
 image: servicestack/creatorkit
