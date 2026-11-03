@@ -12,6 +12,7 @@
 *.sqlite
 .vs/
 *.patch
+App_Data/
 Configure.Secrets.cs
 
 # User-specific files
