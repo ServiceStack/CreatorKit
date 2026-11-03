@@ -41,7 +41,7 @@ public class AppHost : AppHostBase, IHostingStartup
     }
 
     public static void RegisterLicense() =>
-        Licensing.RegisterLicense("OSS BSD-3-Clause 2024 https://github.com/NetCoreApps/CreatorKit TsHchf3Hat2/T1AeeLIMaHp3JR0hgfO96KjlH208d15NqUYwm0G/qcI76DtTQzWDwsezh7CEuaZ5QEmow0ZoP3VNm/M9J2V8kaj2bRQ+00PjwVYwwFQgxwDP3g6QvTKCwbfkiPqO1cTeaQxCqGFpND3Ky9b8CQapMBI21XuES+s=");
+        ServiceStack.Licensing.RegisterLicense("OSS BSD-3-Clause 2026 https://github.com/NetCoreApps/CreatorKit Lwu32oJz/uNCY7ByqyX20VtYi1wgNB2v2FXaejmoUR/bHbx3mUqjI8cx4QraRp6pvXAoRR/sEi3py4TW2RrYK7OBXWGNWnvo+b6sF9kAQVKiVRUxe7e+C0EX8lhi+/5j/tlS9Z62ffpHChfT1J9LI/jbF2NOoQ8RvP74UCdLPzw=");
 }
 
 public class MarkdigTransformer : IMarkdownTransformer
